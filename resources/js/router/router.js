@@ -3,12 +3,56 @@ import VueRouter from "vue-router";
 import store from '../store/store'
 import Home from "../views/Home.vue";
 
+import LoginAdmin from "../views/LoginAdmin.vue";
+import Admin from "../views/Admin/Admin.vue";
+import Dashboard from "../views/Admin/Dashboard.vue";
+
+import CalonMhs from "../views/CalonMhs/CalonMhs.vue";
+import MhsHome from "../views/CalonMhs/Home.vue";
+import Soal from "../views/CalonMhs/Soal.vue";
+
+
 Vue.use(VueRouter);
 const routes = [
+    // {
+    //     path: "/",
+    //     name: "Landing Page",
+    //     component: Home
+    // },
+    {
+        path: "/login-admin",
+        name: "LoginAdmin",
+        component: LoginAdmin
+    },
+    {
+        path: "/admin",
+        name: "Admin",
+        component: Admin,
+        children: [
+            {
+                path: "dashboard",
+                name: "dashboard",
+                component: Dashboard
+
+            }
+        ]
+    },
     {
         path: "/",
-        name: "Landing Page",
-        component: Home
+        name: "CalonMhs",
+        component: CalonMhs,
+        children: [
+            {
+                path: "",
+                name: "MhsHome",
+                component: MhsHome
+            },
+            {
+                path: "soal",
+                name: "Soal",
+                component: Soal
+            }
+        ]
     },
 ];
 

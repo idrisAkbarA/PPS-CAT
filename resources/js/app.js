@@ -24,13 +24,7 @@ Vue.use(VueWindowSize);
 Vue.use(Vuex)
 Vue.use(Vuetify);
 
-const vuetify = new Vuetify(
-    {
-        theme: {
-          dark: true,
-        },
-      }
-);
+const vuetify = new Vuetify();
 /**
  * The following block of code may be used to automatically register your
  * Vue components. It will recursively scan this directory for the Vue

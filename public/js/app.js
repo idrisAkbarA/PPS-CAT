@@ -60266,30 +60266,34 @@ var render = function() {
   var _vm = this
   var _h = _vm.$createElement
   var _c = _vm._self._c || _h
-  return _c(
-    "v-container",
-    { staticStyle: { height: "100%" } },
-    [
-      _vm.windowWidth > 800
-        ? _c(
+  return _vm.windowWidth > 800
+    ? _c(
+        "v-container",
+        {
+          staticStyle: {
+            height: "calc(100vh - 90px)",
+            position: "relative",
+            "overflow-y": "hidden !important"
+          }
+        },
+        [
+          _c(
             "v-row",
-            { staticStyle: { height: "100%" } },
+            { staticClass: "fill-height" },
             [
               _c(
                 "v-col",
-                { staticClass: "pa-0", attrs: { cols: "12", md: "8" } },
+                { staticClass: "fill-height", attrs: { md: "8", lg: "8" } },
                 [
                   _c(
                     "v-card",
                     {
                       staticClass: "blue-grey--text text--darken-4",
                       staticStyle: {
-                        position: "absolute",
-                        height: "100%",
                         border: "2px solid #2ecc71",
                         "border-radius": "5px"
                       },
-                      attrs: { color: "#ecf0f1" }
+                      attrs: { color: "#ecf0f1", height: "100%" }
                     },
                     [
                       _c(
@@ -60440,7 +60444,7 @@ var render = function() {
               _vm._v(" "),
               _c(
                 "v-col",
-                { staticClass: "py-0", attrs: { cols: "12", md: "4" } },
+                { staticClass: "fill-height", attrs: { md: "4", lg: "4" } },
                 [
                   _c(
                     "v-card",
@@ -60466,7 +60470,7 @@ var render = function() {
                           staticClass: "mx-0 pa-0",
                           staticStyle: { "overflow-y": "auto", height: "90%" }
                         },
-                        _vm._l(100, function(item) {
+                        _vm._l(500, function(item) {
                           return _c(
                             "v-btn",
                             {
@@ -60488,234 +60492,17 @@ var render = function() {
               )
             ],
             1
-          )
-        : _vm._e(),
-      _vm._v(" "),
-      _vm.windowWidth < 800
-        ? _c(
-            "v-row",
-            { staticStyle: { height: "100%" } },
-            [
-              _c(
-                "v-col",
-                {
-                  staticClass: "pa-0",
-                  staticStyle: { height: "70%" },
-                  attrs: { cols: "12" }
-                },
-                [
-                  _c(
-                    "v-card",
-                    {
-                      staticClass: "blue-grey--text text--darken-4",
-                      staticStyle: {
-                        position: "absolute",
-                        height: "100%",
-                        border: "2px solid #2ecc71",
-                        "border-radius": "5px"
-                      },
-                      attrs: { color: "#ecf0f1" }
-                    },
-                    [
-                      _c(
-                        "v-card-title",
-                        { staticStyle: { height: "20%" } },
-                        [
-                          _c(
-                            "v-row",
-                            { staticClass: "mx-0" },
-                            [
-                              _c("span", { staticClass: "mr-2" }, [
-                                _vm._v("Soal No.")
-                              ]),
-                              _vm._v(" "),
-                              _c(
-                                "v-chip",
-                                {
-                                  attrs: {
-                                    color: "#2ecc71",
-                                    "text-color": "#ecf0f1"
-                                  }
-                                },
-                                [_vm._v("01")]
-                              ),
-                              _vm._v(" "),
-                              _c("v-spacer")
-                            ],
-                            1
-                          ),
-                          _vm._v(" "),
-                          _c(
-                            "v-row",
-                            { staticClass: "mx-0" },
-                            [
-                              _c(
-                                "v-chip",
-                                {
-                                  attrs: {
-                                    color: "#2ecc71",
-                                    "text-color": "#ecf0f1"
-                                  }
-                                },
-                                [_vm._v("Sisa Waktu")]
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-chip",
-                                {
-                                  attrs: {
-                                    color: "#2ecc71",
-                                    "text-color": "#ecf0f1"
-                                  }
-                                },
-                                [_vm._v("01:00:00")]
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-card-text",
-                        {
-                          staticClass: " blue-grey--text text--darken-4",
-                          staticStyle: { "overflow-y": "auto", height: "50%" }
-                        },
-                        [
-                          _vm._v(
-                            "\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n          Lorem ipsum dolor sit amet consectetur adipisicing elit.\n          Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,\n          asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.\n          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,\n          culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.\n        "
-                          )
-                        ]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-card-actions",
-                        { staticStyle: { height: "30%" } },
-                        [
-                          _c(
-                            "v-col",
-                            [
-                              _c(
-                                "v-row",
-                                { staticClass: "my-1" },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      staticStyle: { color: "#ecf0f1" },
-                                      attrs: { small: "", color: "#2ecc71" }
-                                    },
-                                    [_vm._v("SOAL SEBELUMNYA")]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-row",
-                                { staticClass: "my-1" },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      staticStyle: { color: "#ecf0f1" },
-                                      attrs: { small: "", color: "#2ecc71" }
-                                    },
-                                    [_vm._v("RAGU - RAGU")]
-                                  )
-                                ],
-                                1
-                              ),
-                              _vm._v(" "),
-                              _c(
-                                "v-row",
-                                { staticClass: "my-1" },
-                                [
-                                  _c(
-                                    "v-btn",
-                                    {
-                                      staticStyle: { color: "#ecf0f1" },
-                                      attrs: { small: "", color: "#2ecc71" }
-                                    },
-                                    [_vm._v("SOAL BERIKUTNYA")]
-                                  )
-                                ],
-                                1
-                              )
-                            ],
-                            1
-                          )
-                        ],
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              ),
-              _vm._v(" "),
-              _c(
-                "v-col",
-                {
-                  staticClass: "pa-0",
-                  staticStyle: { height: "25%" },
-                  attrs: { cols: "12" }
-                },
-                [
-                  _c(
-                    "v-card",
-                    {
-                      staticClass: "blue-grey--text text--darken-4 pa-1",
-                      staticStyle: { height: "100%" },
-                      attrs: { outlined: "", color: "rgba(46, 204, 113, 0.25)" }
-                    },
-                    [
-                      _c(
-                        "v-card-title",
-                        {
-                          staticClass: "ma-0 pa-0 ml-1",
-                          staticStyle: { height: "25%" },
-                          attrs: { dense: "" }
-                        },
-                        [_vm._v("\n          Nomor\n        ")]
-                      ),
-                      _vm._v(" "),
-                      _c(
-                        "v-card-text",
-                        {
-                          staticClass: "mx-0 pa-0",
-                          staticStyle: { "overflow-y": "auto", height: "75%" }
-                        },
-                        _vm._l(200, function(item) {
-                          return _c(
-                            "v-btn",
-                            {
-                              key: item,
-                              staticClass: "ma-1 pa-0",
-                              staticStyle: { color: "#ecf0f1" },
-                              attrs: { tile: "", small: "", color: "#2ecc71" }
-                            },
-                            [_vm._v(_vm._s(item))]
-                          )
-                        }),
-                        1
-                      )
-                    ],
-                    1
-                  )
-                ],
-                1
-              )
-            ],
-            1
-          )
-        : _vm._e()
-    ],
-    1
-  )
+          ),
+          _vm._v(" "),
+          _vm.windowWidth < 800
+            ? _c("v-row", { staticClass: "fill-height" }, [
+                _c("h1", [_vm._v("hoi")])
+              ])
+            : _vm._e()
+        ],
+        1
+      )
+    : _vm._e()
 }
 var staticRenderFns = []
 render._withStripped = true
@@ -127969,8 +127756,8 @@ __webpack_require__.r(__webpack_exports__);
 /*! no static exports found */
 /***/ (function(module, exports, __webpack_require__) {
 
-__webpack_require__(/*! C:\pemrograman\APK\Web-Root\PPS-CAT\resources\js\app.js */"./resources/js/app.js");
-module.exports = __webpack_require__(/*! C:\pemrograman\APK\Web-Root\PPS-CAT\resources\sass\app.scss */"./resources/sass/app.scss");
+__webpack_require__(/*! A:\Programming\Web-Root\PPS-CAT\resources\js\app.js */"./resources/js/app.js");
+module.exports = __webpack_require__(/*! A:\Programming\Web-Root\PPS-CAT\resources\sass\app.scss */"./resources/sass/app.scss");
 
 
 /***/ })

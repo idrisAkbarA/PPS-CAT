@@ -14,7 +14,7 @@
           class="blue-grey--text text--darken-4"
           style="position:absolute; height: 100%; border: 2px solid #2ecc71; border-radius: 5px;"
         >
-          <v-card-title>
+          <v-card-title style="height: 10%">
             <v-row class="mx-0">
               <span class="mr-2">Soal No.</span>
               <v-chip
@@ -48,7 +48,10 @@
             </v-row>
           </v-card-title>
 
-          <v-card-text class=" soal blue-grey--text text--darken-4">
+          <v-card-text
+            class="blue-grey--text text--darken-4"
+            style="overflow-y: auto; height: 75%;"
+          >
             Lorem ipsum dolor sit amet consectetur adipisicing elit.
             Quam quis temporibus accusantium fuga incidunt. Sequi sed dolorem, adipisci,
             asperiores possimus voluptates et illum aspernatur voluptatum nisi maiores inventore eos dicta.
@@ -80,7 +83,7 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,
             culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.
           </v-card-text>
-          <v-card-actions v-if="windowWidth>800">
+          <v-card-actions v-if="windowWidth>800" style="height: 15%">
             <v-btn
               color="#2ecc71"
               style="color: #ecf0f1"
@@ -123,7 +126,7 @@
             <v-btn
               class="ma-1 pa-0"
               tile
-              v-for="item in 100"
+              v-for="item in 50"
               :key="item"
               small
               color="#2ecc71"
@@ -257,7 +260,7 @@
             <v-btn
               class="ma-1 pa-0"
               tile
-              v-for="item in 200"
+              v-for="item in 50"
               :key="item"
               small
               color="#2ecc71"
@@ -272,12 +275,4 @@
 </template>
 
 <style scoped>
-.soal {
-  overflow-y: auto;
-  height: 75%;
-}
-.nomor {
-  overflow-y: auto;
-  height: 100%;
-}
 </style>

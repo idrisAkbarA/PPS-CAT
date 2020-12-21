@@ -4,6 +4,7 @@ import store from '../store/store'
 import Home from "../views/Home.vue";
 
 import LoginAdmin from "../views/LoginAdmin.vue";
+import LandingPage from "../views/LandingPage.vue";
 import Admin from "../views/Admin/Admin.vue";
 import Dashboard from "../views/Admin/Dashboard.vue";
 import BankSoal from "../views/Admin/BankSoal.vue";
@@ -25,6 +26,11 @@ const routes = [
         path: "/login-admin",
         name: "LoginAdmin",
         component: LoginAdmin
+    },
+    {
+        path: "/",
+        name: "Landing Page",
+        component: LandingPage
     },
     {
         path: "/admin",
@@ -51,8 +57,9 @@ const routes = [
             }
         ]
     },
+
     {
-        path: "/",
+        path: "/user",
         name: "CalonMhs",
         component: CalonMhs,
         children: [

@@ -6,6 +6,8 @@ import Home from "../views/Home.vue";
 import LoginAdmin from "../views/LoginAdmin.vue";
 import Admin from "../views/Admin/Admin.vue";
 import Dashboard from "../views/Admin/Dashboard.vue";
+import BankSoal from "../views/Admin/BankSoal.vue";
+import Setting from "../views/Admin/Setting.vue";
 
 import CalonMhs from "../views/CalonMhs/CalonMhs.vue";
 import MhsHome from "../views/CalonMhs/Home.vue";
@@ -33,6 +35,18 @@ const routes = [
                 path: "dashboard",
                 name: "dashboard",
                 component: Dashboard
+
+            },
+            {
+                path: "bank-soal",
+                name: "bank-soal",
+                component: BankSoal
+
+            },
+            {
+                path: "setting-ujian",
+                name: "setting-ujian",
+                component: Setting
 
             }
         ]

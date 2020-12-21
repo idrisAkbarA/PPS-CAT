@@ -83,7 +83,10 @@
             Lorem ipsum dolor sit amet consectetur, adipisicing elit. Labore, iusto maxime. Dicta odit est,
             culpa enim saepe ullam? Quidem quis laborum veniam hic incidunt eveniet perspiciatis delectus mollitia eius maxime.
           </v-card-text>
-          <v-card-actions v-if="windowWidth>800" style="height: 15%">
+          <v-card-actions
+            v-if="windowWidth>800"
+            style="height: 15%"
+          >
             <v-btn
               color="#2ecc71"
               style="color: #ecf0f1"
